@@ -1,5 +1,5 @@
 #-*- coding:utf8 -*-
-# name: 身份证号码生存器0.1.1
+# name: 身份证号码生存器0.1.0
 # author: Sola
 # data:24Jun2016
 
