@@ -10,7 +10,7 @@ import os
 import time
 
 
-def id_creator(distinct='341003', birth=time.strftime("%Y%m%d", time.localtime())):
+def id_creator(distinct='341003', birth)):
     last42 = random.randint(0,99)
     if last42 < 10:
         last3 = '0' + str(last42)
@@ -39,8 +39,6 @@ def main():
         if len(distinct) == 6:
             birth = raw_input("请输入出生日期(格式:yyyymmdd):".decode('utf8').encode("gbk"))
             try:
-                if len(birth) == 0:
-                    id_creator(distinct=distinct)
                 if time.strptime(birth, '%Y%m%d'):
                     id_creator(distinct=distinct, birth=birth)
             except:
@@ -51,8 +49,6 @@ def main():
     if code == 'w':
         birth = raw_input("请输入出生日期(格式:yyyymmdd):".decode('utf8').encode("gbk"))
         try:
-            if len(birth) == 0:
-                id_creator()
             if time.strptime(birth, '%Y%m%d'):
                 id_creator(birth=birth)
         except:
