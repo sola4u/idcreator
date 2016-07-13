@@ -10,7 +10,7 @@ import os
 import time
 
 
-def id_creator(distinct='341003', birth)):
+def id_creator(distinct='341003', birth=time.strftime("%Y%m%d", time.localtime())):
     last42 = random.randint(0,99)
     if last42 < 10:
         last3 = '0' + str(last42)
