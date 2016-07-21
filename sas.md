@@ -20,7 +20,7 @@ by sola
 ```sas
 data work.test;
   input name $5. age birthday date9. score 3.1;
-  format birthday data9.;
+  format birthday date9.;
   cards;
 jack 10 01jan2006 9.2
 marry 11 03oct2005 8.4
