@@ -1,10 +1,11 @@
-#-*- coding:utf8 -*-
+#!/usr/bin/env python
+#-*-coding:utf8-*-
+
+
 # name: 身份证号码生存器0.1.1
 # author: Sola
 # data:24Jun2016
 
-#!/usr/bin/env python
-#-*-coding:utf8-*-
 import random
 import os
 import time
